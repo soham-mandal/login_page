@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+    
+<head>
+	<title>profile</title>
+</head>
+<body>
+    <a href="/login/login/">Login Page</a>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
